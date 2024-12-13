@@ -83,6 +83,7 @@ const WhyUgao = () => {
             <ReactPlayer
               url="https://www.youtube.com/watch?v=Xq2iDxLWgB0"
               playing
+              controls
               width="100%"
               height="100%"
             />
