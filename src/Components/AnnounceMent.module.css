@@ -1,0 +1,62 @@
+/* announce bar */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .md-announcement {
+      animation: scrollAnnounce 10s linear infinite;
+    }
+  
+    @keyframes scrollAnnounce {
+      0% {
+        transform: translateX(100%);
+      }
+  
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+  
+  .animated-text {
+    animation: slideInOut 6s ease-in-out;
+  }
+  
+  @keyframes slideInOut {
+    0% {
+      transform: translateX(130%);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-130%);
+      opacity: 1;
+    }
+  }
+  
+  .sm-animated-text {
+    animation: sm-slideInOut 6s ease-in-out;
+  }
+  
+  @keyframes sm-slideInOut {
+    0% {
+      transform: translateX(200%);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-200%);
+      opacity: 1;
+    }
+  }

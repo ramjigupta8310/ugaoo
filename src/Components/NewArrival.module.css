@@ -1,0 +1,61 @@
+/*Bestseller Cards*/
+.sl-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.sl-card {
+  width: 23%;
+  flex: 0 0 auto;
+}
+
+.sl-card-detail-heading {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1024px) {
+  .sl-cards {
+    overflow-x: scroll;
+  }
+
+  .sl-card {
+    width: 40%;
+  }
+
+  .sl-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sl-cards {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+
+  /* Show buttons */
+  /* .lg\\:hidden {
+      display: flex;
+    } */
+}
+
+@media (max-width: 620px) {
+  .sl-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 420px) {
+  .sl-card {
+    width: 70%;
+  }
+}
+
+.sl-button-icon-container:disabled .sl-button-icon {
+  pointer-events: none;
+  opacity: 0.3;
+}
